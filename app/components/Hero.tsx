@@ -25,7 +25,7 @@ export default function Hero() {
         />
       </div>
       {/* Banner Image */}
-      <div className="lg:w-1/2 lg:relative w-full">
+      <div className="lg:w-1/2 lg:relative w-[1/2]">
         <Image
           src={HeroBanner}
           height={900}

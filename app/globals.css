@@ -33,6 +33,10 @@
 
   /* Font */
   --font-display: var(--font-poppins);
+
+  /* breakpoints */
+
+  --breakpoint-xs: 375px;
 }
 
 @media (prefers-color-scheme: dark) {
