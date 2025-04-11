@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function URLForm() {
   return (
     <div className="absolute w-full px-[1rem] lg:px-[10rem] left-0 right-0 bottom-[-4rem]">
-      <div className="bg-[url('/assets/images/bg-shorten-desktop.svg')] bg-[var(--dark-violet)] p-[1rem] lg:px-[3rem] lg:py-[2rem] w-[93vw] lg:w-full rounded-lg ">
+      <div className="bg-[url('/assets/images/bg-shorten-desktop.svg')] bg-[var(--dark-violet)] p-[1rem] lg:px-[3rem] lg:py-[2rem] w-full rounded-lg ">
         <form
           action="submit"
           className="lg:flex-row gap-[1rem] w-full flex flex-col"
