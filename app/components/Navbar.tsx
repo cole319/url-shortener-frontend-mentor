@@ -12,15 +12,15 @@ export default function Navbar() {
   const [hamburger, setHamburger] = useState(true);
 
   return (
-    <nav className="flex justify-between items-center px-[1rem] md:px-[10rem] relative">
+    <nav className="flex justify-between items-center px-[1rem] lg:px-[10rem] relative">
       <div className="flex justify-center items-center gap-[4rem]">
         {/* logo */}
 
-        <h1 className="text-[var(--very-dark-violet)] font-extrabold md:text-[2.3rem] text-[1.5rem]">
+        <h1 className="text-[var(--very-dark-violet)] font-extrabold lg:text-[2.3rem] text-[1.5rem]">
           <Image src={Logo} height={150} width={150} alt="shortly logo" />
         </h1>
         {/* menu */}
-        <ul className="text-[var(--grayish-violet)] font-bold gap-[1.5rem] cursor-pointer text-[1rem] hidden md:flex">
+        <ul className="text-[var(--grayish-violet)] font-bold gap-[1.5rem] cursor-pointer text-[1rem] hidden lg:flex">
           <li className=" hover:text-[var(--dark-gray)]">Features</li>
           <li className=" hover:text-[var(--dark-gray)]">Pricing</li>
           <li className=" hover:text-[var(--dark-gray)]">Resources</li>
@@ -28,7 +28,7 @@ export default function Navbar() {
       </div>
 
       {/* login signup buttons */}
-      <div className="h-fit gap-[1rem] justify-center items-center hidden md:flex">
+      <div className="h-fit gap-[1rem] justify-center items-center hidden lg:flex">
         <Button
           cssProperties="bg-transparent rounded-full text-[var(--grayish-violet)] hover:bg-[var(--cyan)] hover:text-neutral-50 border-transparent"
           text="Login"
@@ -43,7 +43,7 @@ export default function Navbar() {
 
       {hamburger == false && (
         <div
-          className={`flex flex-col items-start w-full bg-[var(--light-violet)] px-[2rem] py-[1rem] right-[0%] top-[0%] z-20 rounded-lg md:hidden transform transition-transform duration-300 ease-in-out fixed ${
+          className={`flex flex-col items-start w-full bg-[var(--light-violet)] px-[2rem] py-[1rem] right-[0%] top-[0%] z-20 rounded-lg lg:hidden transform transition-transform duration-300 ease-in-out fixed ${
             !hamburger ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -81,7 +81,7 @@ export default function Navbar() {
       )}
       {hamburger == true && (
         <button
-          className="text-[var(--grayish-violet)] text-[2rem] md:hidden"
+          className="text-[var(--grayish-violet)] text-[2rem] lg:hidden"
           onClick={() => setHamburger(false)}
         >
           <GiHamburgerMenu />

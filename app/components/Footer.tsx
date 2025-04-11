@@ -9,12 +9,12 @@ import InstagramIcon from "../../public/assets/images/icon-instagram.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-[1rem] md:px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex flex-col md:flex-row justify-between items-start space-y-[3rem] md:space-y-0">
-      <h1 className="text-[var(--light-gray)] font-extrabold text-[2rem] md:w-1/4 w-full text-center md:text-left">
+    <footer className="px-[1rem] lg:px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex flex-col lg:flex-row justify-between items-start space-y-[3rem] lg:space-y-0">
+      <h1 className="text-[var(--light-gray)] font-extrabold text-[2rem] lg:w-1/4 w-full text-center lg:text-left">
         Shortly
       </h1>
 
-      <div className="flex flex-col md:flex-row w-full md:w-2/4 gap-[3rem] md:gap-[4rem] md:justify-end md:items-start items-center text-center md:text-left">
+      <div className="flex flex-col lg:flex-row w-full lg:w-2/4 gap-[3rem] lg:gap-[4rem] lg:justify-end lg:items-start items-center text-center lg:text-left">
         <ul className="space-y-2">
           <li className="font-semibold">Features</li>
           <li className="text-[var(--grayish-violet)] text-[0.8rem] hover:underline cursor-pointer">
@@ -55,7 +55,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex w-full md:w-1/4 gap-[2rem] md:justify-end justify-center">
+      <div className="flex w-full lg:w-1/4 gap-[2rem] lg:justify-end justify-center">
         <a href="#">
           <Image
             src={FacebookIcon}
