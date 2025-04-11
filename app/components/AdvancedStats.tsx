@@ -11,12 +11,12 @@ export default function AdvancedStats() {
   return (
     <section className="py-[10rem] bg-[var(--light-violet)] px-[10rem] flex flex-col justify-center items-center gap-[3rem]">
       {/* Heading */}
-      <article className="w-[35%] text-center">
+      <article className="w-[40%] text-center">
         <h1 className="text-[var(--dark-violet)] text-[2rem] font-bold pb-[0.8rem]">
           Advanced Statistics
         </h1>
         {/* Description */}
-        <p className="text-[var(--grayish-violet)] text-[1.1rem] font-semibold">
+        <p className="text-[var(--grayish-violet)] text-[1rem] font-semibold">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>

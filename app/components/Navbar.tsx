@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="flex justify-center items-center gap-[4rem]">
         {/* logo */}
 
-        <h1 className="text-[var(--very-dark-violet)] font-extrabold text-[2.5rem]">
+        <h1 className="text-[var(--very-dark-violet)] font-extrabold text-[2.3rem]">
           Shortly
         </h1>
         {/* menu */}
@@ -23,11 +23,11 @@ export default function Navbar() {
       {/* login signup buttons */}
       <div className="flex h-fit gap-[1rem] justify-center items-center">
         <Button
-          cssProperties="bg-transparent rounded-full text-[var(--grayish-violet)] hover:bg-[var(--cyan)] hover:text-[var(--light-gray)] border-transparent"
+          cssProperties="bg-transparent rounded-full text-[var(--grayish-violet)] hover:bg-[var(--cyan)] hover:text-neutral-50 border-transparent"
           text="Login"
         />
         <Button
-          cssProperties="bg-[var(--cyan)] rounded-full text-[var(--light-gray)] hover:bg-transparent hover:text-[var(--grayish-violet)] bg-[var(--cyan)]"
+          cssProperties="bg-[var(--cyan)] rounded-full text-neutral-50 hover:bg-transparent hover:text-[var(--grayish-violet)] bg-[var(--cyan)]"
           text="Sign Up"
         />
       </div>

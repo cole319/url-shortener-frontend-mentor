@@ -4,10 +4,11 @@ import Image from "next/image";
 //internal imports
 import Button from "./Button";
 import HeroBanner from "../../public/assets/images/illustration-working.svg";
+import URLForm from "./URLForm";
 
 export default function Hero() {
   return (
-    <section className="flex py-[8rem] px-[10rem]">
+    <section className="flex py-[8rem] px-[10rem] relative pb-[12rem]">
       {/* Description */}
       <div className="w-1/2">
         <h1 className="text-[4.5rem] text-[var(--very-dark-violet)] font-bold leading-20">
@@ -19,7 +20,7 @@ export default function Hero() {
         </p>
 
         <Button
-          cssProperties="bg-[var(--cyan)] rounded-full text-[var(--light-gray)] hover:bg-transparent hover:text-[var(--grayish-violet)] bg-[var(--cyan)]"
+          cssProperties="bg-[var(--cyan)] rounded-full text-neutral-50 hover:bg-transparent hover:text-[var(--grayish-violet)] bg-[var(--cyan)]"
           text="Get Started"
         />
       </div>
@@ -33,6 +34,8 @@ export default function Hero() {
           className="mix-blend-multiply absolute left-[30%]"
         />
       </div>
+
+      <URLForm />
     </section>
   );
 }
