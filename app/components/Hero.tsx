@@ -7,7 +7,7 @@ import HeroBanner from "../../public/assets/images/illustration-working.svg";
 
 export default function Hero() {
   return (
-    <section className="flex py-[8rem]">
+    <section className="flex py-[8rem] px-[10rem]">
       {/* Description */}
       <div className="w-1/2">
         <h1 className="text-[4.5rem] text-[var(--very-dark-violet)] font-bold leading-20">
