@@ -24,7 +24,7 @@ export default function AdvancedStats() {
       </article>
       {/* Advanced Statistics Cards */}
       <div className="flex justify-center items-center">
-        <div className="flex flex-col gap-[5rem] lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-[3rem] h-[110vh] lg:h-[40vh] relative">
+        <div className="flex flex-col gap-[5rem] lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-[3rem] h-fit lg:h-[40vh] relative">
           <CyanStraightLineHorizontal />
           <CyanStraightLineVertical />
 
