@@ -4,6 +4,7 @@ interface ButtonProps {
   cssProperties?: string;
   text: string;
 }
+
 export default function Button({ cssProperties, text }: ButtonProps) {
   return (
     <button

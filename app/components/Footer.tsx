@@ -9,12 +9,12 @@ import InstagramIcon from "../../public/assets/images/icon-instagram.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex justify-between items-start">
-      <h1 className="text-[var(--light-gray)] font-extrabold text-[2rem] w-1/4">
+    <footer className="px-[1rem] md:px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex flex-col md:flex-row justify-between items-start space-y-[3rem] md:space-y-0">
+      <h1 className="text-[var(--light-gray)] font-extrabold text-[2rem] md:w-1/4 w-full text-center md:text-left">
         Shortly
       </h1>
 
-      <div className="flex w-2/4 gap-[4rem] justify-end">
+      <div className="flex flex-col md:flex-row w-full md:w-2/4 gap-[3rem] md:gap-[4rem] md:justify-end md:items-start items-center text-center md:text-left">
         <ul className="space-y-2">
           <li className="font-semibold">Features</li>
           <li className="text-[var(--grayish-violet)] text-[0.8rem] hover:underline cursor-pointer">
@@ -55,7 +55,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex w-1/4 gap-[2rem] justify-end">
+      <div className="flex w-full md:w-1/4 gap-[2rem] md:justify-end justify-center">
         <a href="#">
           <Image
             src={FacebookIcon}
@@ -65,11 +65,9 @@ export default function Footer() {
           />
         </a>
         <a href="#">
-          {" "}
           <Image src={TwitterIcon} height={20} width={20} alt="twitter icon" />
         </a>
         <a href="#">
-          {" "}
           <Image
             src={PinterestIcon}
             height={20}
@@ -78,7 +76,6 @@ export default function Footer() {
           />
         </a>
         <a href="#">
-          {" "}
           <Image
             src={InstagramIcon}
             height={20}

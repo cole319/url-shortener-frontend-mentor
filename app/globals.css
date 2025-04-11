@@ -24,6 +24,7 @@
 
   /* Neutral */
   --light-gray: hsl(0, 0%, 92%);
+  --semi-gray: hsl(0, 0%, 88%);
   --gray: hsl(0, 0%, 75%);
   --dark-gray: hsl(0, 0%, 50%);
   --grayish-violet: hsl(257, 7%, 63%);
