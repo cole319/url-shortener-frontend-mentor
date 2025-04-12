@@ -7,11 +7,15 @@ import DetailedRecordIcon from "../../public/assets/images/icon-detailed-records
 import FullyCustomizableIcon from "../../public/assets/images/icon-fully-customizable.svg";
 import CyanStraightLineHorizontal from "./CyanStraightLineHorizontal";
 import CyanStraightLineVertical from "./CyanStraightLineVertical";
+import URLForm from "./URLForm";
+import ShortenedUrlList from "./ShortenedUrlList";
 
 export default function AdvancedStats() {
   return (
-    <section className="py-[10rem] bg-[var(--light-violet)] px-[1rem] xll:px-[10rem] flex flex-col justify-center items-center gap-[6rem] lg:gap-[3rem] md:max-lg:px-[7rem] lg:max-xll:px-[4rem]">
+    <section className="py-[6rem] sm:max-lg:py-[1.5rem] lg:py-[3.5rem] bg-[var(--light-violet)] px-[1rem] xll:px-[10rem] flex flex-col justify-center items-center gap-[6rem] lg:gap-[3rem] md:max-lg:px-[7rem] lg:max-xll:px-[4rem] relative">
       {/* Heading */}
+      <URLForm />
+      <ShortenedUrlList />
       <article className="w-full lg:w-[40%] text-center">
         <h1 className="text-[var(--dark-violet)] text-[2rem] font-bold pb-[0.8rem]">
           Advanced Statistics

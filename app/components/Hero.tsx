@@ -62,8 +62,6 @@ export default function Hero() {
         alt="working illustration"
         className="mix-blend-multiply absolute top-[5%] left-[5%] xsm:hidden"
       />
-
-      <URLForm />
     </section>
   );
 }
