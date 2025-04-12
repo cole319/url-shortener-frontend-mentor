@@ -10,7 +10,7 @@ import CyanStraightLineVertical from "./CyanStraightLineVertical";
 
 export default function AdvancedStats() {
   return (
-    <section className="py-[10rem] bg-[var(--light-violet)] px-[1rem] lg:px-[10rem] flex flex-col justify-center items-center gap-[6rem] lg:gap-[3rem]">
+    <section className="py-[10rem] bg-[var(--light-violet)] px-[1rem] lg:px-[10rem] flex flex-col justify-center items-center gap-[6rem] lg:gap-[3rem] md:max-lg:px-[7rem]">
       {/* Heading */}
       <article className="w-full lg:w-[40%] text-center">
         <h1 className="text-[var(--dark-violet)] text-[2rem] font-bold pb-[0.8rem]">
