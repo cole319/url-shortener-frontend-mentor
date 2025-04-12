@@ -38,6 +38,7 @@
 
   --breakpoint-xs: 375px;
   --breakpoint-xsm: 465px;
+  --breakpoint-xll: 1385px;
 }
 
 @media (prefers-color-scheme: dark) {

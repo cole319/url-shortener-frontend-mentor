@@ -9,7 +9,7 @@ import InstagramIcon from "../../public/assets/images/icon-instagram.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-[1rem] md:px-[2rem] lg:px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex flex-col md:flex-row justify-between items-start space-y-[3rem] md:space-y-0">
+    <footer className="px-[1rem] md:max-lg:px-[2rem] xll:px-[10rem] bg-[var(--very-dark-violet)] py-[4rem] flex flex-col md:flex-row justify-between items-start space-y-[3rem] md:space-y-0 lg:max-xll:px-[4rem]">
       <h1 className="text-[var(--light-gray)] font-extrabold text-[2rem] md:w-1/4 w-full text-center md:text-left">
         Shortly
       </h1>

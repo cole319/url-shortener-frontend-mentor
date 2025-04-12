@@ -23,7 +23,7 @@ export default function AdvancedStatsCard({
         />
       </div>
       <div className="flex flex-col justify-center items-center lg:items-start pt-[4.5rem] pb-[2rem] px-[2rem] gap-[1rem] text-center lg:text-left">
-        <h1 className="text-[var(--dark-violet)] font-bold text-[1.4rem] ">
+        <h1 className="text-[var(--dark-violet)] font-bold text-[1.4rem] lg:max-xll:text-[1rem]">
           {heading}
         </h1>
         <p className="text-[var(--grayish-violet)] text-[0.8rem] font-semibold">

@@ -12,7 +12,7 @@ export default function Navbar() {
   const [hamburger, setHamburger] = useState(true);
 
   return (
-    <nav className="flex justify-between items-center px-[1rem] lg:px-[10rem] relative md:max-lg:px-[7rem]">
+    <nav className="flex justify-between items-center px-[1rem] xll:px-[10rem] relative md:max-lg:px-[7rem] lg:max-xll:px-[4rem]">
       <div className="flex justify-center items-center gap-[4rem]">
         {/* logo */}
 
