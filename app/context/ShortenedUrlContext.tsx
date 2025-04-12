@@ -30,6 +30,7 @@ export function useShortenedUrl() {
 export function ShortenedUrlProvider({ children }: { children: ReactNode }) {
   const [urlList, setUrlList] = useState<ShortenedUrlListItemType[]>([]);
 
+  //load from localStorage on first mount
   useEffect(() => {
     const stored = localStorage.getItem("shortenedUrls");
     if (stored) {
@@ -44,13 +45,20 @@ export function ShortenedUrlProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  // Save to localStorage whenever urlList changes
+  //save to localStorage whenever urlList changes
   useEffect(() => {
     localStorage.setItem("shortenedUrls", JSON.stringify(urlList));
   }, [urlList]);
 
   const addUrl = (item: ShortenedUrlListItemType) => {
-    setUrlList((prev) => [item, ...prev]);
+    setUrlList((prev) => {
+      const updated = [item, ...prev];
+      if (updated.length > 10) {
+        updated.pop(); // Remove the oldest (first) item
+      }
+      localStorage.setItem("shortenedUrls", JSON.stringify(updated));
+      return updated;
+    });
   };
 
   return (
