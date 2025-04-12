@@ -27,7 +27,7 @@ A sleek and responsive URL shortener app built with Next.js (App Router), TypeSc
 - **Clipboard Copy Button** updates its label to `"Copied!"` and changes color for clear feedback.
 - **Custom Button Component** was created to maintain design consistency across the app.
 
-## 📦 Getting Started
+## Getting Started
 
 Clone the repo and install dependencies:
 
