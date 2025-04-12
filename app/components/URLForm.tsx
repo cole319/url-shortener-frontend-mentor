@@ -1,20 +1,22 @@
 "use client";
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
+//context
+import { useShortenedUrl } from "../context/ShortenedUrlContext";
 
 //internal imports
 import Button from "./Button";
-import ShortenedUrlListItem from "./ShortenedUrlListItem";
 
 export default function URLForm() {
   const [url, setUrl] = useState("");
-  const [shortUrl, setShortUrl] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const { addUrl } = useShortenedUrl();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-    setShortUrl("");
     setLoading(true);
 
     if (!url.trim()) {
@@ -35,7 +37,13 @@ export default function URLForm() {
       if (!res.ok) {
         setError(data.error || "Something went wrong.");
       } else {
-        setShortUrl(data.result_url);
+        const newItem = {
+          id: uuidv4(),
+          url: url.trim(),
+          shortenedUrl: data.result_url,
+        };
+        addUrl(newItem);
+        setUrl(""); // clear input after success
       }
     } catch (err) {
       setError("Unexpected error. Please try again.");
@@ -53,6 +61,7 @@ export default function URLForm() {
         >
           <input
             type="text"
+            value={url}
             className="bg-neutral-50 py-[0.8rem] px-[2rem] rounded-lg w-full sm:w-3/4 lg:w-4/5 placeholder-[var(--dark-gray)] text-[var(--dark-gray)]"
             placeholder="Shorten a link here..."
             onChange={(e) => setUrl(e.target.value)}
@@ -63,6 +72,9 @@ export default function URLForm() {
             type="submit"
           />
         </form>
+        {error && (
+          <p className="text-red-400 font-semibold text-sm pt-2">{error}</p>
+        )}
       </div>
     </div>
   );

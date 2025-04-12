@@ -2,14 +2,16 @@
 import React, { useState } from "react";
 
 //internal imports
-import ShortenedUrlListItemType from "../types/ShortenedUrlListItemType";
 import ShortenedUrlListItem from "./ShortenedUrlListItem";
 
+//cotext
+import { useShortenedUrl } from "../context/ShortenedUrlContext";
+
 export default function ShortenedUrlList() {
-  const [urlList, setUrlList] = useState<ShortenedUrlListItemType[]>([]);
+  const { urlList } = useShortenedUrl();
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full gap-[1rem]">
       {urlList.map((listItem) => (
         <div key={listItem.id}>
           <ShortenedUrlListItem
@@ -22,10 +24,3 @@ export default function ShortenedUrlList() {
     </div>
   );
 }
-
-//  <ShortenedUrlListItem
-//    url={
-//      "https://www.reallylongandpointlessdomainnameexample.com/articles/how-to-train-your-cat-to-code"
-//    }
-//    shortenedUrl={"http://example.com"}
-//  />;

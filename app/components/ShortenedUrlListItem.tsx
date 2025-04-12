@@ -16,7 +16,7 @@ export default function ShortenedUrlListItem({
       <h1 className="xll:w-2/3 text-center xll:text-start">
         {url.slice(0, 18) + "...." + url.slice(-18)}
       </h1>
-      <div className="flex justify-center gap-[1rem] xll:gap-0 lg:justify-between items-center xll:w-1/3">
+      <div className="flex justify-center gap-[1rem] xll:gap-[1rem] lg:justify-between items-center xll:w-1/3">
         <h1 className="text-[var(--very-dark-cyan)] font-bold">
           {shortenedUrl}
         </h1>
