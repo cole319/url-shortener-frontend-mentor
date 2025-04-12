@@ -7,11 +7,6 @@ import Button from "./Button";
 //types
 import ShortenedUrlListItemType from "../types/ShortenedUrlListItemType";
 
-// interface ShortenedUrlListItemProps {
-//   url: string;
-//   shortenedUrl: string;
-// }
-
 export default function ShortenedUrlListItem({
   url,
   shortenedUrl,
