@@ -16,7 +16,7 @@ export default function HamburgerMenu({
 }: HamburgerMenuProps) {
   return (
     <div
-      className={`flex flex-col items-start bg-[var(--light-violet)] px-[2rem] py-[1rem] right-[0%] top-[0%] z-20 rounded-lg md:hidden transform transition-transform duration-300 ease-in-out fixed ${
+      className={`flex flex-col items-start bg-[var(--light-violet)] px-[2rem] py-[1rem] right-[0%] top-[0%] z-20 rounded-lg lg:hidden transform transition-transform duration-300 ease-in-out fixed ${
         !hamburger ? "translate-x-0" : "-translate-x-full"
       }`}
     >

@@ -14,7 +14,8 @@
   /* Primary */
 
   --cyan: hsl(180, 66%, 49%);
-  --dark-cyan: hsl(180, 66%, 50%);
+  --dark-cyan: hsl(180, 66%, 46%);
+  --very-dark-cyan: hsl(180, 66%, 40%);
   --dark-violet: hsl(257, 27%, 26%);
   --light-violet: hsl(230, 25%, 95%);
 
@@ -33,6 +34,12 @@
 
   /* Font */
   --font-display: var(--font-poppins);
+
+  /* breakpoints */
+
+  --breakpoint-xs: 375px;
+  --breakpoint-xsm: 465px;
+  --breakpoint-xll: 1385px;
 }
 
 @media (prefers-color-scheme: dark) {
